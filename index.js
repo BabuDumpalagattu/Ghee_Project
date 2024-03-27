@@ -22,13 +22,13 @@ db.once('open',()=>console.log("Connected to Database"))
 app.post("/Signup",(req,res)=>{
     var name = req.body.name;
     var email = req.body.email;
-    var phno = req.body.phno;
+    var phoneNumber = req.body.phoneNumber;
     var password = req.body.password;
 
     var data = {
         "name": name,
         "email" : email,
-        "phno": phno,
+        "phno": phoneNumber,
         "password" : password
     }
 
